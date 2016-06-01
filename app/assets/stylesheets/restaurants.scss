@@ -1,0 +1,36 @@
+.wrapper {
+  text-align: center;
+}
+
+.title-bar {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  background: red;
+  color: white;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+.content li {
+  list-style: none;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.restaurant-listing {
+  h3 {
+    text-align: center;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  background: LightGrey;
+  padding: 20px 0px;
+  margin-bottom: 10px;
+  width: 300px;
+  margin: 10px auto;
+}

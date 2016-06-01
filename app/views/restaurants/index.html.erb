@@ -1,0 +1,22 @@
+  <div class="title-bar">
+    <h1>XXX FOODSTERDAM XXX</h1>
+  </div>
+  <div class="wrapper">
+    <div class="content">
+    <h3><%= link_to 'create a restaurant', new_restaurant_path  %></h3>
+      <ul>
+        <% @restaurants.each do |restaurant|  %>
+        <li>
+          <div class="restaurant-listing">
+            <h3>
+              <%= link_to restaurant.name, restaurant_path(restaurant)  %>
+            </h3>
+            address: <%= restaurant.address  %> <br>
+            phone: <%= restaurant.phone_number  %> <br>
+            category: <%= restaurant.category  %>
+          </div>
+        </li>
+        <% end  %>
+      </ul>
+    </div>
+  </div>
