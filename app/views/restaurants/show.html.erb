@@ -11,7 +11,9 @@
         phone: <%= @restaurant.phone_number  %> <br>
         category: <%= @restaurant.category  %> <br>
         <br>
-        <%= link_to 'back', restaurants_path  %>
+        <br>
+        <%= link_to "review", new_restaurant_review_path(@restaurant)  %>
+        <%= render "back"  %>
       </div>
     </div>
   </div>
